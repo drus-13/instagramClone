@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  InstagramCloneProject
+
+  Created by Andrey Dolgov on 12.11.2020.
+  
+*/
+
+/* Onboard */
+"onboard.createNewAccount" = "Create New Account";
+"onboard.logIn" = "Log In";
+
+/* Login */
+"login.userNamePlaceholder" = "Phone number, username or email";
+"login.passwordPlaceholder" = "Password";
+"login.forgotUsername" = "Forgot Username?";
+"login.login" = "Log In";
+"login.or" = "OR";
+"login.logInWithFacebook" = "Log In With Facebook";
+"login.dontHaveAnAccount" = "Don't have an account?";
+"login.signUp" = "Sign Up";
