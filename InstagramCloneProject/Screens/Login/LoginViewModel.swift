@@ -14,4 +14,20 @@ class LoginViewModel {
     func load() {
         
     }
+    
+    func forgetPasswordTapped() {
+        
+    }
+    
+    func logInTapped() {
+        
+    }
+    
+    func loginWithFacebookTapped() {
+        
+    }
+    
+    func signUpTapped() {
+        
+    }
 }

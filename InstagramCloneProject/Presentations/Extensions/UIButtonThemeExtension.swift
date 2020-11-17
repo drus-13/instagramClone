@@ -11,7 +11,6 @@ import UIKit
 enum ThemeButtonType {
     case primary
     case secondary
-    case secondarySmall
     case inline
 }
 
@@ -31,10 +30,11 @@ extension UIButton {
             self.setTitleColor(Theme.with(color: .primaryColor), for: .normal)
             self.titleLabel?.font = Font.with(size: .body, weight: .semibold, family: .text)
             self.contentEdgeInsets = UIEdgeInsets(top: 0.01, left: 0, bottom: 0.01, right: 0)
-        case .secondarySmall:
-            ()
         case .inline:
-            ()
+            self.backgroundColor = Theme.with(color: .clearColor)
+            self.setTitleColor(Theme.with(color: .primaryColor), for: .normal)
+            self.titleLabel?.font = Font.with(size: .body, weight: .semibold, family: .text)
+            self.contentEdgeInsets = UIEdgeInsets(top: 0.01, left: 0, bottom: 0.01, right: 0)
         }
     }
 }

@@ -21,6 +21,10 @@ final class OnboardViewController: UIViewController {
         self.viewModel.delegate = self
         self.viewModel.load()
 
+        prepareUI()
+    }
+    
+    private func prepareUI() {
         self.view.backgroundColor = Theme.with(color: .viewBackgroundColor)
         self.createNewAccountButton.configure(type: .primary)
         self.signInButton.configure(type: .secondary)
