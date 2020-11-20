@@ -16,7 +16,7 @@ final class OnboardViewModel {
     }
     
     func createNewAccountTapped() {
-        
+        self.delegate?.navigateToRegister()
     }
     
     func signInTapped() {

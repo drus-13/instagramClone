@@ -47,4 +47,11 @@ extension OnboardViewController: OnboardViewModelDelegate {
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
+    
+    func navigateToRegister() {
+        let storyboard = UIStoryboard(name: "Register", bundle: nil)
+        if let viewController = storyboard.instantiateInitialViewController() {
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
 }

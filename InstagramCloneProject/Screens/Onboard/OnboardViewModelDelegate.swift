@@ -10,5 +10,5 @@ import Foundation
 protocol OnboardViewModelDelegate: class {
     
     func navigateToLogin()
-    
+    func navigateToRegister()
 }

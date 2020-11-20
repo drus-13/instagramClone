@@ -13,6 +13,7 @@ import UIKit
 struct Font {
     
     enum Family {
+        case compactDisplay
         case display
         case text
     }
@@ -21,16 +22,21 @@ struct Font {
         case regular
         case medium
         case semibold
+        case light
     }
     
     enum Size: CGFloat {
         case small = 12
         case body = 14
+        case subtitle = 18
+        case title = 24
     }
     
     static func with(size: Size, weight: Weight, family: Family) -> UIFont {
         var fontName = ""
         switch family {
+        case .compactDisplay:
+            fontName = "SFCompactDisplay"
         case .display:
             fontName = "SFProDisplay"
         case .text:
@@ -44,6 +50,8 @@ struct Font {
             fontName += "-Medium"
         case .semibold:
             fontName += "-Semibold"
+        case .light:
+            fontName += "-Light"
         }
         
         return UIFont(name: fontName, size: size.rawValue)!

@@ -19,3 +19,14 @@
 "login.logInWithFacebook" = "Log In With Facebook";
 "login.dontHaveAnAccount" = "Don't have an account?";
 "login.signUp" = "Sign Up";
+
+/* Register */
+"register.title" = "Enter Phone or Email";
+"register.firstSegment" = "Phone";
+"register.secondSegment" = "Email";
+"register.phonePlaceholder" = "Phone Number";
+"register.emailPlaceholder" = "Email Adress";
+"register.next" = "Next";
+"register.phoneInformation" = "You may receive SMS updates from Instagram and can opt out at any time.";
+"register.bottomInfo" = "Already have an account?";
+"register.bottomInfoSignIn" = "Sign In";

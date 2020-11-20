@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1143E932565BD730065C9EA /* SF-Compact-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1143E922565BD730065C9EA /* SF-Compact-Display-Regular.otf */; };
+		F1143E982565BE030065C9EA /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1143E972565BE030065C9EA /* SF-Pro-Text-Light.otf */; };
+		F1143E9D2565BEC60065C9EA /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1143E9C2565BEC60065C9EA /* SF-Pro-Text-Regular.otf */; };
+		F1143EA22565BF0C0065C9EA /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1143EA12565BF0C0065C9EA /* SF-Pro-Display-Medium.otf */; };
+		F1143EA825666FF20065C9EA /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1143EA725666FF20065C9EA /* Register.storyboard */; };
 		F1661D242563150000A91541 /* UITextFieldThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1661D232563150000A91541 /* UITextFieldThemeExtension.swift */; };
 		F1661D402563D9A100A91541 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1661D3F2563D9A100A91541 /* SF-Pro-Text-Semibold.otf */; };
 		F1661D542563E05C00A91541 /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1661D532563E05C00A91541 /* IGTextField.swift */; };
@@ -18,6 +23,10 @@
 		F1B374C72561743D002B4015 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374C62561743D002B4015 /* LoginViewModel.swift */; };
 		F1B374CC25617454002B4015 /* LoginViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374CB25617454002B4015 /* LoginViewModelDelegate.swift */; };
 		F1B374D725617F87002B4015 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374D625617F87002B4015 /* UILabelExtension.swift */; };
+		F1EEB7B32567D66600C84D35 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEB7B22567D66600C84D35 /* RegisterViewController.swift */; };
+		F1EEB7B82567D6E100C84D35 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEB7B72567D6E100C84D35 /* RegisterViewModel.swift */; };
+		F1EEB7BD2567D74700C84D35 /* RegisterViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEB7BC2567D74700C84D35 /* RegisterViewModelDelegate.swift */; };
+		F1EEB7C32567EC9100C84D35 /* RegisterPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEB7C22567EC9100C84D35 /* RegisterPhoneTextField.swift */; };
 		F1F836D6255DA4EA00CEC655 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F836D5255DA4EA00CEC655 /* UIButtonExtension.swift */; };
 		F1F836DB255DAF2200CEC655 /* UIButtonThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F836DA255DAF2200CEC655 /* UIButtonThemeExtension.swift */; };
 		F1F836E9255DB1E200CEC655 /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F836E8255DB1E200CEC655 /* OnboardViewModel.swift */; };
@@ -54,6 +63,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1143E922565BD730065C9EA /* SF-Compact-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Regular.otf"; sourceTree = "<group>"; };
+		F1143E972565BE030065C9EA /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		F1143E9C2565BEC60065C9EA /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		F1143EA12565BF0C0065C9EA /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		F1143EA725666FF20065C9EA /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		F1661D232563150000A91541 /* UITextFieldThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldThemeExtension.swift; sourceTree = "<group>"; };
 		F1661D3F2563D9A100A91541 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		F1661D532563E05C00A91541 /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
@@ -65,6 +79,10 @@
 		F1B374C62561743D002B4015 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F1B374CB25617454002B4015 /* LoginViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelDelegate.swift; sourceTree = "<group>"; };
 		F1B374D625617F87002B4015 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		F1EEB7B22567D66600C84D35 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F1EEB7B72567D6E100C84D35 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F1EEB7BC2567D74700C84D35 /* RegisterViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelDelegate.swift; sourceTree = "<group>"; };
+		F1EEB7C22567EC9100C84D35 /* RegisterPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneTextField.swift; sourceTree = "<group>"; };
 		F1F836D5255DA4EA00CEC655 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		F1F836DA255DAF2200CEC655 /* UIButtonThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonThemeExtension.swift; sourceTree = "<group>"; };
 		F1F836E8255DB1E200CEC655 /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
@@ -114,12 +132,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1143EA62565BF7C0065C9EA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F1143EA725666FF20065C9EA /* Register.storyboard */,
+				F1EEB7B22567D66600C84D35 /* RegisterViewController.swift */,
+				F1EEB7B72567D6E100C84D35 /* RegisterViewModel.swift */,
+				F1EEB7BC2567D74700C84D35 /* RegisterViewModelDelegate.swift */,
+				F1EEB7C22567EC9100C84D35 /* RegisterPhoneTextField.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		F1661D372563D84400A91541 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F1143EA12565BF0C0065C9EA /* SF-Pro-Display-Medium.otf */,
+				F1143E972565BE030065C9EA /* SF-Pro-Text-Light.otf */,
+				F1143E922565BD730065C9EA /* SF-Compact-Display-Regular.otf */,
 				F1661D5B2563E23600A91541 /* SF-Pro-Display-Regular.otf */,
 				F1661D5C2563E23600A91541 /* SF-Pro-Display-Semibold.otf */,
 				F1661D5D2563E23600A91541 /* SF-Pro-Text-Medium.otf */,
+				F1143E9C2565BEC60065C9EA /* SF-Pro-Text-Regular.otf */,
 				F1661D3F2563D9A100A91541 /* SF-Pro-Text-Semibold.otf */,
 			);
 			path = Fonts;
@@ -262,6 +296,7 @@
 		F1FE92FE255C840700D75C8F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F1143EA62565BF7C0065C9EA /* Register */,
 				F1B374BB256173EE002B4015 /* Login */,
 				F1FE92FF255C840C00D75C8F /* Onboard */,
 				F1FE9300255C841100D75C8F /* Launch */,
@@ -408,11 +443,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1143E982565BE030065C9EA /* SF-Pro-Text-Light.otf in Resources */,
+				F1143E932565BD730065C9EA /* SF-Compact-Display-Regular.otf in Resources */,
 				F1661D5F2563E23600A91541 /* SF-Pro-Display-Semibold.otf in Resources */,
+				F1143EA22565BF0C0065C9EA /* SF-Pro-Display-Medium.otf in Resources */,
 				F1661D402563D9A100A91541 /* SF-Pro-Text-Semibold.otf in Resources */,
 				F1FE9327255D87E600D75C8F /* Localizable.strings in Resources */,
 				F1B374C225617426002B4015 /* Login.storyboard in Resources */,
+				F1143E9D2565BEC60065C9EA /* SF-Pro-Text-Regular.otf in Resources */,
 				F1FE930F255C84C300D75C8F /* Onboard.storyboard in Resources */,
+				F1143EA825666FF20065C9EA /* Register.storyboard in Resources */,
 				F1F836F7255DBB0900CEC655 /* LaunchScreen.storyboard in Resources */,
 				F1661D5E2563E23600A91541 /* SF-Pro-Display-Regular.otf in Resources */,
 				F1FE92CE255C834F00D75C8F /* Assets.xcassets in Resources */,
@@ -445,15 +485,19 @@
 				F1FE9314255C857300D75C8F /* Font.swift in Sources */,
 				F1F836E9255DB1E200CEC655 /* OnboardViewModel.swift in Sources */,
 				F1F836DB255DAF2200CEC655 /* UIButtonThemeExtension.swift in Sources */,
+				F1EEB7BD2567D74700C84D35 /* RegisterViewModelDelegate.swift in Sources */,
 				F1B374D725617F87002B4015 /* UILabelExtension.swift in Sources */,
 				F1661D542563E05C00A91541 /* IGTextField.swift in Sources */,
 				F1FE92C5255C834D00D75C8F /* AppDelegate.swift in Sources */,
+				F1EEB7B82567D6E100C84D35 /* RegisterViewModel.swift in Sources */,
 				F1661D242563150000A91541 /* UITextFieldThemeExtension.swift in Sources */,
 				F1FE931E255D86E200D75C8F /* Localization.swift in Sources */,
 				F1FE9319255D422000D75C8F /* Theme.swift in Sources */,
 				F1F836D6255DA4EA00CEC655 /* UIButtonExtension.swift in Sources */,
 				F1FE9304255C849300D75C8F /* OnboardViewController.swift in Sources */,
 				F1B374C72561743D002B4015 /* LoginViewModel.swift in Sources */,
+				F1EEB7C32567EC9100C84D35 /* RegisterPhoneTextField.swift in Sources */,
+				F1EEB7B32567D66600C84D35 /* RegisterViewController.swift in Sources */,
 				F1FE92C7255C834D00D75C8F /* SceneDelegate.swift in Sources */,
 				F1F836EE255DB26C00CEC655 /* OnboardViewModelDelegate.swift in Sources */,
 				F1B374BD25617407002B4015 /* LoginViewController.swift in Sources */,

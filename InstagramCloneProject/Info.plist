@@ -26,6 +26,10 @@
 		<string>SF-Pro-Display-Regular.otf</string>
 		<string>SF-Pro-Display-Semibold.otf</string>
 		<string>SF-Pro-Text-Medium.otf</string>
+		<string>SF-Compact-Display-Regular.otf</string>
+		<string>SF-Pro-Text-Light.otf</string>
+		<string>SF-Pro-Text-Regular.otf</string>
+		<string>SF-Pro-Display-Medium</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
