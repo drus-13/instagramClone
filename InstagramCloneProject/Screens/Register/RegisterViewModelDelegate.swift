@@ -9,4 +9,6 @@ import Foundation
 
 protocol RegisterViewModelDelegate: class {
     
+    func navigationToCountryList(viewModel: RegisterCountryListViewModel)
+    func updateCountryButton(_ text: String)
 }

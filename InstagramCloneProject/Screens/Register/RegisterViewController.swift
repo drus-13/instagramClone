@@ -133,6 +133,7 @@ final class RegisterViewController: UIViewController {
     }
     
     @IBAction private func phoneCountryCodeButtonTapped(_ sender: Any) {
+        self.viewModel.phoneCountryCodeTapped()
     }
     
     @IBAction private func emailSegmentButtonTapped(_ sender: Any) {
@@ -149,4 +150,15 @@ final class RegisterViewController: UIViewController {
 
 extension RegisterViewController: RegisterViewModelDelegate {
     
+    func navigationToCountryList(viewModel: RegisterCountryListViewModel) {
+        let storyboard = UIStoryboard(name: "RegisterCountryList", bundle: nil)
+        if let navigationController = storyboard.instantiateInitialViewController() as? UINavigationController, let viewController = navigationController.viewControllers.first as? RegisterCountryListViewController {
+            viewController.viewModel = viewModel
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    func updateCountryButton(_ text: String) {
+        self.phoneCountryCodeButton.setTitle(text, for: .normal)
+    }
 }

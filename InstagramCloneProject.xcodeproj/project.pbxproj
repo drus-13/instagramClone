@@ -18,6 +18,22 @@
 		F1661D5E2563E23600A91541 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1661D5B2563E23600A91541 /* SF-Pro-Display-Regular.otf */; };
 		F1661D5F2563E23600A91541 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1661D5C2563E23600A91541 /* SF-Pro-Display-Semibold.otf */; };
 		F1661D602563E23600A91541 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F1661D5D2563E23600A91541 /* SF-Pro-Text-Medium.otf */; };
+		F19C767925694F1D006E38B9 /* RegisterCountryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19C767825694F1D006E38B9 /* RegisterCountryList.storyboard */; };
+		F19C768125694F2E006E38B9 /* RegisterCountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C768025694F2E006E38B9 /* RegisterCountryListViewController.swift */; };
+		F19C768625694F99006E38B9 /* RegisterCountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C768525694F99006E38B9 /* RegisterCountryListViewModel.swift */; };
+		F19C768B25695005006E38B9 /* RegisterCountryListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C768A25695005006E38B9 /* RegisterCountryListViewModelDelegate.swift */; };
+		F19C769025695117006E38B9 /* RegisterCountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C768F25695117006E38B9 /* RegisterCountryPresenter.swift */; };
+		F19C7695256AAC97006E38B9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C7694256AAC97006E38B9 /* UITableViewExtension.swift */; };
+		F19C769C256ADBAC006E38B9 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C769B256ADBAC006E38B9 /* Resource.swift */; };
+		F19C76A6256ADCA9006E38B9 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C76A5256ADCA9006E38B9 /* Mapper.swift */; };
+		F19C76AF256ADD54006E38B9 /* CountryListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C76AE256ADD54006E38B9 /* CountryListResponseModel.swift */; };
+		F19C76B7256ADD83006E38B9 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C76B6256ADD83006E38B9 /* CountryModel.swift */; };
+		F19C76BC256ADDC7006E38B9 /* CountryList.json in Resources */ = {isa = PBXBuildFile; fileRef = F19C76BB256ADDC7006E38B9 /* CountryList.json */; };
+		F19C76C9256AE110006E38B9 /* RegisterCountryListHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C76C8256AE110006E38B9 /* RegisterCountryListHeaderFooterView.swift */; };
+		F19C76D6256AE145006E38B9 /* RegisterCountryListHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19C76D5256AE145006E38B9 /* RegisterCountryListHeaderFooterView.xib */; };
+		F19C76DC256AE1E4006E38B9 /* RegisterCountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C76DA256AE1E3006E38B9 /* RegisterCountryListTableViewCell.swift */; };
+		F19C76DD256AE1E4006E38B9 /* RegisterCountryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19C76DB256AE1E3006E38B9 /* RegisterCountryListTableViewCell.xib */; };
+		F19C76E3256C6639006E38B9 /* RegisterCountryListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19C76E2256C6639006E38B9 /* RegisterCountryListDelegate.swift */; };
 		F1B374BD25617407002B4015 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374BC25617407002B4015 /* LoginViewController.swift */; };
 		F1B374C225617426002B4015 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B374C125617426002B4015 /* Login.storyboard */; };
 		F1B374C72561743D002B4015 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B374C62561743D002B4015 /* LoginViewModel.swift */; };
@@ -74,6 +90,22 @@
 		F1661D5B2563E23600A91541 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		F1661D5C2563E23600A91541 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		F1661D5D2563E23600A91541 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		F19C767825694F1D006E38B9 /* RegisterCountryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterCountryList.storyboard; sourceTree = "<group>"; };
+		F19C768025694F2E006E38B9 /* RegisterCountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryListViewController.swift; sourceTree = "<group>"; };
+		F19C768525694F99006E38B9 /* RegisterCountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryListViewModel.swift; sourceTree = "<group>"; };
+		F19C768A25695005006E38B9 /* RegisterCountryListViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryListViewModelDelegate.swift; sourceTree = "<group>"; };
+		F19C768F25695117006E38B9 /* RegisterCountryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryPresenter.swift; sourceTree = "<group>"; };
+		F19C7694256AAC97006E38B9 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F19C769B256ADBAC006E38B9 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		F19C76A5256ADCA9006E38B9 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		F19C76AE256ADD54006E38B9 /* CountryListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListResponseModel.swift; sourceTree = "<group>"; };
+		F19C76B6256ADD83006E38B9 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		F19C76BB256ADDC7006E38B9 /* CountryList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountryList.json; sourceTree = "<group>"; };
+		F19C76C8256AE110006E38B9 /* RegisterCountryListHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryListHeaderFooterView.swift; sourceTree = "<group>"; };
+		F19C76D5256AE145006E38B9 /* RegisterCountryListHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCountryListHeaderFooterView.xib; sourceTree = "<group>"; };
+		F19C76DA256AE1E3006E38B9 /* RegisterCountryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryListTableViewCell.swift; sourceTree = "<group>"; };
+		F19C76DB256AE1E3006E38B9 /* RegisterCountryListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCountryListTableViewCell.xib; sourceTree = "<group>"; };
+		F19C76E2256C6639006E38B9 /* RegisterCountryListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCountryListDelegate.swift; sourceTree = "<group>"; };
 		F1B374BC25617407002B4015 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1B374C125617426002B4015 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F1B374C62561743D002B4015 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -167,6 +199,65 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
+		F19C767725694F02006E38B9 /* RegisterCountryList */ = {
+			isa = PBXGroup;
+			children = (
+				F19C767825694F1D006E38B9 /* RegisterCountryList.storyboard */,
+				F19C768025694F2E006E38B9 /* RegisterCountryListViewController.swift */,
+				F19C768525694F99006E38B9 /* RegisterCountryListViewModel.swift */,
+				F19C768A25695005006E38B9 /* RegisterCountryListViewModelDelegate.swift */,
+				F19C768F25695117006E38B9 /* RegisterCountryPresenter.swift */,
+				F19C76C8256AE110006E38B9 /* RegisterCountryListHeaderFooterView.swift */,
+				F19C76D5256AE145006E38B9 /* RegisterCountryListHeaderFooterView.xib */,
+				F19C76DA256AE1E3006E38B9 /* RegisterCountryListTableViewCell.swift */,
+				F19C76DB256AE1E3006E38B9 /* RegisterCountryListTableViewCell.xib */,
+				F19C76E2256C6639006E38B9 /* RegisterCountryListDelegate.swift */,
+			);
+			path = RegisterCountryList;
+			sourceTree = "<group>";
+		};
+		F19C7699256AB027006E38B9 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F19C76BB256ADDC7006E38B9 /* CountryList.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		F19C769A256ADB99006E38B9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F19C769B256ADBAC006E38B9 /* Resource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F19C76A3256ADC8C006E38B9 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F19C76AD256ADD3F006E38B9 /* Model */,
+				F19C76A4256ADC97006E38B9 /* Network */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		F19C76A4256ADC97006E38B9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F19C76A5256ADCA9006E38B9 /* Mapper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F19C76AD256ADD3F006E38B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F19C76AE256ADD54006E38B9 /* CountryListResponseModel.swift */,
+				F19C76B6256ADD83006E38B9 /* CountryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F1B374BB256173EE002B4015 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +292,7 @@
 		F1FE92C3255C834D00D75C8F /* InstagramCloneProject */ = {
 			isa = PBXGroup;
 			children = (
+				F19C76A3256ADC8C006E38B9 /* Business */,
 				F1FE9301255C842A00D75C8F /* Resources */,
 				F1FE92FE255C840700D75C8F /* Screens */,
 				F1FE92FB255C83DB00D75C8F /* Presentations */,
@@ -250,6 +342,7 @@
 		F1FE92F9255C83BD00D75C8F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F19C769A256ADB99006E38B9 /* Resource */,
 				F1FE92FA255C83C500D75C8F /* Localization */,
 			);
 			path = Common;
@@ -289,6 +382,7 @@
 				F1F836DA255DAF2200CEC655 /* UIButtonThemeExtension.swift */,
 				F1B374D625617F87002B4015 /* UILabelExtension.swift */,
 				F1661D232563150000A91541 /* UITextFieldThemeExtension.swift */,
+				F19C7694256AAC97006E38B9 /* UITableViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -296,6 +390,7 @@
 		F1FE92FE255C840700D75C8F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F19C767725694F02006E38B9 /* RegisterCountryList */,
 				F1143EA62565BF7C0065C9EA /* Register */,
 				F1B374BB256173EE002B4015 /* Login */,
 				F1FE92FF255C840C00D75C8F /* Onboard */,
@@ -326,6 +421,7 @@
 		F1FE9301255C842A00D75C8F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F19C7699256AB027006E38B9 /* Json */,
 				F1661D372563D84400A91541 /* Fonts */,
 				F1FE9302255C843000D75C8F /* Strings */,
 			);
@@ -444,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1143E982565BE030065C9EA /* SF-Pro-Text-Light.otf in Resources */,
+				F19C76DD256AE1E4006E38B9 /* RegisterCountryListTableViewCell.xib in Resources */,
 				F1143E932565BD730065C9EA /* SF-Compact-Display-Regular.otf in Resources */,
 				F1661D5F2563E23600A91541 /* SF-Pro-Display-Semibold.otf in Resources */,
 				F1143EA22565BF0C0065C9EA /* SF-Pro-Display-Medium.otf in Resources */,
@@ -451,9 +548,12 @@
 				F1FE9327255D87E600D75C8F /* Localizable.strings in Resources */,
 				F1B374C225617426002B4015 /* Login.storyboard in Resources */,
 				F1143E9D2565BEC60065C9EA /* SF-Pro-Text-Regular.otf in Resources */,
+				F19C76BC256ADDC7006E38B9 /* CountryList.json in Resources */,
+				F19C767925694F1D006E38B9 /* RegisterCountryList.storyboard in Resources */,
 				F1FE930F255C84C300D75C8F /* Onboard.storyboard in Resources */,
 				F1143EA825666FF20065C9EA /* Register.storyboard in Resources */,
 				F1F836F7255DBB0900CEC655 /* LaunchScreen.storyboard in Resources */,
+				F19C76D6256AE145006E38B9 /* RegisterCountryListHeaderFooterView.xib in Resources */,
 				F1661D5E2563E23600A91541 /* SF-Pro-Display-Regular.otf in Resources */,
 				F1FE92CE255C834F00D75C8F /* Assets.xcassets in Resources */,
 				F1661D602563E23600A91541 /* SF-Pro-Text-Medium.otf in Resources */,
@@ -481,23 +581,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19C768B25695005006E38B9 /* RegisterCountryListViewModelDelegate.swift in Sources */,
 				F1B374CC25617454002B4015 /* LoginViewModelDelegate.swift in Sources */,
+				F19C769025695117006E38B9 /* RegisterCountryPresenter.swift in Sources */,
 				F1FE9314255C857300D75C8F /* Font.swift in Sources */,
+				F19C76E3256C6639006E38B9 /* RegisterCountryListDelegate.swift in Sources */,
+				F19C768625694F99006E38B9 /* RegisterCountryListViewModel.swift in Sources */,
 				F1F836E9255DB1E200CEC655 /* OnboardViewModel.swift in Sources */,
 				F1F836DB255DAF2200CEC655 /* UIButtonThemeExtension.swift in Sources */,
 				F1EEB7BD2567D74700C84D35 /* RegisterViewModelDelegate.swift in Sources */,
 				F1B374D725617F87002B4015 /* UILabelExtension.swift in Sources */,
+				F19C76AF256ADD54006E38B9 /* CountryListResponseModel.swift in Sources */,
 				F1661D542563E05C00A91541 /* IGTextField.swift in Sources */,
+				F19C76DC256AE1E4006E38B9 /* RegisterCountryListTableViewCell.swift in Sources */,
 				F1FE92C5255C834D00D75C8F /* AppDelegate.swift in Sources */,
+				F19C7695256AAC97006E38B9 /* UITableViewExtension.swift in Sources */,
 				F1EEB7B82567D6E100C84D35 /* RegisterViewModel.swift in Sources */,
+				F19C76A6256ADCA9006E38B9 /* Mapper.swift in Sources */,
+				F19C769C256ADBAC006E38B9 /* Resource.swift in Sources */,
 				F1661D242563150000A91541 /* UITextFieldThemeExtension.swift in Sources */,
+				F19C768125694F2E006E38B9 /* RegisterCountryListViewController.swift in Sources */,
 				F1FE931E255D86E200D75C8F /* Localization.swift in Sources */,
 				F1FE9319255D422000D75C8F /* Theme.swift in Sources */,
 				F1F836D6255DA4EA00CEC655 /* UIButtonExtension.swift in Sources */,
+				F19C76B7256ADD83006E38B9 /* CountryModel.swift in Sources */,
 				F1FE9304255C849300D75C8F /* OnboardViewController.swift in Sources */,
 				F1B374C72561743D002B4015 /* LoginViewModel.swift in Sources */,
 				F1EEB7C32567EC9100C84D35 /* RegisterPhoneTextField.swift in Sources */,
 				F1EEB7B32567D66600C84D35 /* RegisterViewController.swift in Sources */,
+				F19C76C9256AE110006E38B9 /* RegisterCountryListHeaderFooterView.swift in Sources */,
 				F1FE92C7255C834D00D75C8F /* SceneDelegate.swift in Sources */,
 				F1F836EE255DB26C00CEC655 /* OnboardViewModelDelegate.swift in Sources */,
 				F1B374BD25617407002B4015 /* LoginViewController.swift in Sources */,

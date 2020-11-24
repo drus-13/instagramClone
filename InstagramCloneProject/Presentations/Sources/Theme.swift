@@ -21,6 +21,7 @@ struct Theme {
         case viewBackgroundColor
         case navigationColor
         case secondaryTextColor
+        case separatorColor
     }
     
     static func with(color: Color) -> UIColor {
@@ -43,6 +44,8 @@ struct Theme {
             return UIColor(red: 38/255, green: 38/255, blue: 38/255, alpha: 1)
         case .secondaryTextColor:
             return UIColor(red: 143/255, green: 143/255, blue: 143/255, alpha: 1)
+        case .separatorColor:
+            return UIColor(red: 219/255, green: 219/255, blue: 219/255, alpha: 1)
         }
     }
 }

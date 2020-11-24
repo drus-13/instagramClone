@@ -28,6 +28,7 @@ struct Font {
     enum Size: CGFloat {
         case small = 12
         case body = 14
+        case heading = 16
         case subtitle = 18
         case title = 24
     }

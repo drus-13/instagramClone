@@ -30,3 +30,8 @@
 "register.phoneInformation" = "You may receive SMS updates from Instagram and can opt out at any time.";
 "register.bottomInfo" = "Already have an account?";
 "register.bottomInfoSignIn" = "Sign In";
+
+/* Register/CountryList */
+"register.countryList.title" = "Select Country";
+"register.countryList.cancel" = "Cancel";
+"register.countryList.tableViewHeader" = "ALL COUNTRIES";
