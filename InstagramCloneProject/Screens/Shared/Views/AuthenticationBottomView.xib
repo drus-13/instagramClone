@@ -37,16 +37,10 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="login.dontHaveAnAccount"/>
-                                    </userDefinedRuntimeAttributes>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVQ-Ek-Yfq">
                                     <rect key="frame" x="45.5" y="0.0" width="46" height="30"/>
                                     <state key="normal" title="Button"/>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="login.signUp"/>
-                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="infoButtonTapped:" destination="-1" eventType="touchUpInside" id="l3k-nY-0uC"/>
                                     </connections>

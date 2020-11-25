@@ -199,6 +199,13 @@
                                     <constraint firstAttribute="height" constant="44" id="ybG-2a-1Li"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwJ-nJ-JcQ" customClass="AuthenticationBottomView" customModule="InstagramCloneProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="48" id="Fkr-kg-lq0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uig-Vw-vL1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -207,12 +214,15 @@
                             <constraint firstItem="uig-Vw-vL1" firstAttribute="trailing" secondItem="KNa-Wa-a6W" secondAttribute="trailing" constant="32" id="4u7-pp-CgZ"/>
                             <constraint firstItem="ede-TB-o7Q" firstAttribute="top" secondItem="DfW-9z-eV5" secondAttribute="top" id="60p-f2-7m9"/>
                             <constraint firstItem="KNa-Wa-a6W" firstAttribute="leading" secondItem="uig-Vw-vL1" secondAttribute="leading" constant="32" id="7xY-Fn-2tS"/>
+                            <constraint firstItem="uig-Vw-vL1" firstAttribute="trailing" secondItem="pwJ-nJ-JcQ" secondAttribute="trailing" id="CtC-pF-Buv"/>
                             <constraint firstItem="X9Z-Pe-4sL" firstAttribute="leading" secondItem="2A0-WI-LoS" secondAttribute="leading" id="G6H-kf-N7w"/>
+                            <constraint firstItem="uig-Vw-vL1" firstAttribute="bottom" secondItem="pwJ-nJ-JcQ" secondAttribute="bottom" id="H5E-ud-zuI"/>
                             <constraint firstItem="dZj-xf-Sw7" firstAttribute="leading" secondItem="uig-Vw-vL1" secondAttribute="leading" constant="64" id="Kvd-Ld-5tl"/>
                             <constraint firstItem="64V-Ru-MzS" firstAttribute="trailing" secondItem="2A0-WI-LoS" secondAttribute="trailing" id="LNE-F1-2hk"/>
                             <constraint firstItem="2A0-WI-LoS" firstAttribute="top" secondItem="KNa-Wa-a6W" secondAttribute="bottom" constant="16" id="LUt-xJ-T8m"/>
                             <constraint firstItem="TxT-La-R9b" firstAttribute="leading" secondItem="uig-Vw-vL1" secondAttribute="leading" constant="16" id="Mw1-YL-KJk"/>
                             <constraint firstItem="DfW-9z-eV5" firstAttribute="leading" secondItem="uig-Vw-vL1" secondAttribute="leading" constant="32" id="OAI-pb-krZ"/>
+                            <constraint firstItem="pwJ-nJ-JcQ" firstAttribute="leading" secondItem="uig-Vw-vL1" secondAttribute="leading" id="PDx-xF-f8d"/>
                             <constraint firstItem="uig-Vw-vL1" firstAttribute="trailing" secondItem="ptr-qG-L5Y" secondAttribute="trailing" id="XXZ-B0-3i8"/>
                             <constraint firstItem="ede-TB-o7Q" firstAttribute="trailing" secondItem="DfW-9z-eV5" secondAttribute="trailing" id="YiZ-Jl-fb3"/>
                             <constraint firstItem="ede-TB-o7Q" firstAttribute="leading" secondItem="DfW-9z-eV5" secondAttribute="leading" id="b0i-qH-Jbc"/>
@@ -241,6 +251,7 @@
                         <outlet property="bottomDivider" destination="PIr-0R-Sf4" id="2xJ-f2-Eoq"/>
                         <outlet property="bottomInfoButton" destination="tam-vS-smk" id="Gqd-tR-gZx"/>
                         <outlet property="bottomInfoLabel" destination="zkL-dR-Bap" id="Sfd-wP-Ph0"/>
+                        <outlet property="bottomInfoView" destination="pwJ-nJ-JcQ" id="U5g-mC-yNX"/>
                         <outlet property="emailSegmentButton" destination="4e9-d0-GWO" id="gyh-fj-vVk"/>
                         <outlet property="emailSegmentDivider" destination="64V-Ru-MzS" id="CfF-v1-en7"/>
                         <outlet property="emailTextField" destination="ede-TB-o7Q" id="phf-2l-psS"/>
@@ -254,11 +265,43 @@
                         <outlet property="phoneTextFieldContentView" destination="DfW-9z-eV5" id="2kW-o0-rYo"/>
                         <outlet property="segmentDividerView" destination="2A0-WI-LoS" id="Dwh-94-x6P"/>
                         <outlet property="titleLabel" destination="vAX-fs-dQf" id="4ST-p6-tTh"/>
+                        <segue destination="y9X-Th-1Fe" kind="show" identifier="RegisterNameSegue" id="4t0-EN-kRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Tg-Tx-MnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-278" y="27"/>
+        </scene>
+        <!--Register Name View Controller-->
+        <scene sceneID="eM8-ay-1xS">
+            <objects>
+                <viewController id="y9X-Th-1Fe" customClass="RegisterNameViewController" customModule="InstagramCloneProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TQg-YE-JTc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5h-hG-qnL" customClass="RegisterInputView" customModule="InstagramCloneProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JYj-qt-ckE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JYj-qt-ckE" firstAttribute="trailing" secondItem="l5h-hG-qnL" secondAttribute="trailing" id="0MJ-7V-O8p"/>
+                            <constraint firstItem="l5h-hG-qnL" firstAttribute="leading" secondItem="JYj-qt-ckE" secondAttribute="leading" id="1yS-wp-6HJ"/>
+                            <constraint firstItem="l5h-hG-qnL" firstAttribute="top" secondItem="JYj-qt-ckE" secondAttribute="top" id="l8N-28-OXU"/>
+                            <constraint firstItem="JYj-qt-ckE" firstAttribute="bottom" secondItem="l5h-hG-qnL" secondAttribute="bottom" id="ukz-PW-trp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8BF-h8-ELm"/>
+                    <connections>
+                        <outlet property="registerInputView" destination="l5h-hG-qnL" id="m0A-ui-dsE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVa-Bw-Jhl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="27"/>
         </scene>
     </scenes>
     <resources>

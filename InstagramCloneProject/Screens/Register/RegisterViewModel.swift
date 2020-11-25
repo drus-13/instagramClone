@@ -26,6 +26,10 @@ final class RegisterViewModel {
             self.delegate?.navigationToCountryList(viewModel: viewModel)
         }
     }
+    
+    func nextButtonTapped() {
+        self.delegate?.navigateToNameStep()
+    }
 }
 
 extension RegisterViewModel: RegisterCountryListDelegate {

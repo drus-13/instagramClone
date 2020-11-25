@@ -6,6 +6,10 @@
   
 */
 
+/* General */
+
+"next" = "Next";
+
 /* Onboard */
 "onboard.createNewAccount" = "Create New Account";
 "onboard.logIn" = "Log In";
@@ -35,3 +39,9 @@
 "register.countryList.title" = "Select Country";
 "register.countryList.cancel" = "Cancel";
 "register.countryList.tableViewHeader" = "ALL COUNTRIES";
+
+/* Register/Name */
+"register.name.title" = "Add Your Name";
+"register.name.subtitle" = "Add your name so friends can find you.";
+"register.name.textFieldPlaceholder" = "Full Name";
+

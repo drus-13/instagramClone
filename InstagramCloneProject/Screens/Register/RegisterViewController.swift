@@ -31,6 +31,8 @@ final class RegisterViewController: UIViewController {
     @IBOutlet private weak var bottomDivider: UIView!
     @IBOutlet private weak var bottomInfoLabel: UILabel!
     @IBOutlet private weak var bottomInfoButton: UIButton!
+    @IBOutlet private weak var bottomInfoView: AuthenticationBottomView!
+
     
     private let viewModel: RegisterViewModel = RegisterViewModel()
     
@@ -87,20 +89,16 @@ final class RegisterViewController: UIViewController {
         self.emailTextField.configure()
         self.phoneInfoLabel.textColor = Theme.with(color: .secondaryTextColor)
         self.phoneInfoLabel.font = Font.with(size: .small, weight: .regular, family: .compactDisplay)
-        
+        self.nextButton.configure(type: .primary)
+
         // Country Code
         self.phoneCountryCodeButton.configure(type: .secondary)
         self.phoneCountryCodeButton.titleLabel?.font = Font.with(size: .body, weight: .regular, family: .display)
         self.phoneCountryCodeButton.backgroundColor = Theme.with(color: .clearColor)
         
         // Bottom
-        self.bottomDivider.backgroundColor = Theme.with(color: .borderColor)
-        self.bottomInfoLabel.textColor = Theme.with(color: .placeholderColor)
-        self.bottomInfoLabel.font = Font.with(size: .small, weight: .regular, family: .display)
-        self.bottomInfoButton.configure(type: .inline)
-        self.bottomInfoButton.titleLabel?.font = Font.with(size: .small, weight: .regular, family: .display)
-        self.nextButton.configure(type: .primary)
-        
+        self.bottomInfoView.configure(infoText: Localization.string(key: "register.bottomInfo", defaultValues: ""), infoButtonText: Localization.string(key: "register.bottomInfoSignIn", defaultValues: ""))
+        self.bottomInfoView.delegate = self
     }
     
     private func configureSegment(_ type: SegmentType) {
@@ -141,9 +139,7 @@ final class RegisterViewController: UIViewController {
     }
     
     @IBAction private func nextButtonTapped(_ sender: Any) {
-    }
-    
-    @IBAction private func bottomInfoButtonTapped(_ sender: Any) {
+        self.viewModel.nextButtonTapped()
     }
     
 }
@@ -158,7 +154,16 @@ extension RegisterViewController: RegisterViewModelDelegate {
         }
     }
     
+    func navigateToNameStep() {
+        self.performSegue(withIdentifier: "RegisterNameSegue", sender: nil)
+    }
+    
     func updateCountryButton(_ text: String) {
         self.phoneCountryCodeButton.setTitle(text, for: .normal)
+    }
+}
+
+extension RegisterViewController: AuthenticationBottomViewDelegate {
+    func viewButtonTapped() {
     }
 }

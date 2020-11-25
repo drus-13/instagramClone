@@ -7,7 +7,6 @@
 
 import UIKit
 
-@IBDesignable
 final class AuthenticationBottomView: UIView {
     @IBOutlet weak var dividerView: UIView!
     @IBOutlet weak var infoLabel: UILabel!

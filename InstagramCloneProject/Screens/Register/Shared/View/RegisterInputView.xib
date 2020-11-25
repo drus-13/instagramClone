@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterInputView" customModule="InstagramCloneProject" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="kc8-Np-klZ" id="kor-Cv-zPC"/>
+                <outlet property="button" destination="9es-xS-y9p" id="svK-s6-0uC"/>
+                <outlet property="subtitleLabel" destination="1gs-ej-MZc" id="XP3-nr-chv"/>
+                <outlet property="textField" destination="G4a-Sw-kmV" id="p5R-J3-Yht"/>
+                <outlet property="titleLabel" destination="5Az-5F-Ryr" id="brZ-XF-UtD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Az-5F-Ryr">
+                    <rect key="frame" x="186" y="32" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gs-ej-MZc">
+                    <rect key="frame" x="32" y="69" width="350" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4a-Sw-kmV" customClass="IGTextField" customModule="InstagramCloneProject" customModuleProvider="target">
+                    <rect key="frame" x="32" y="114" width="350" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9es-xS-y9p">
+                    <rect key="frame" x="32" y="172" width="350" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="tNP-eM-8OX"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kc8-Np-klZ" customClass="AuthenticationBottomView" customModule="InstagramCloneProject" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="848" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="M9Q-bK-hxs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5Az-5F-Ryr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="1Vd-um-hBG"/>
+                <constraint firstAttribute="trailing" secondItem="9es-xS-y9p" secondAttribute="trailing" constant="32" id="9vJ-hy-VSN"/>
+                <constraint firstAttribute="trailing" secondItem="1gs-ej-MZc" secondAttribute="trailing" constant="32" id="E45-sR-LQi"/>
+                <constraint firstItem="G4a-Sw-kmV" firstAttribute="top" secondItem="1gs-ej-MZc" secondAttribute="bottom" constant="24" id="FFe-x7-eVG"/>
+                <constraint firstItem="5Az-5F-Ryr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="J5X-9V-O7G"/>
+                <constraint firstItem="1gs-ej-MZc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="P9j-BW-4EJ"/>
+                <constraint firstItem="kc8-Np-klZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZYO-67-lK6"/>
+                <constraint firstItem="9es-xS-y9p" firstAttribute="top" secondItem="G4a-Sw-kmV" secondAttribute="bottom" constant="24" id="eVS-lF-c0x"/>
+                <constraint firstItem="9es-xS-y9p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="iHr-hX-DzX"/>
+                <constraint firstAttribute="trailing" secondItem="kc8-Np-klZ" secondAttribute="trailing" id="iT1-1S-gAT"/>
+                <constraint firstAttribute="bottom" secondItem="kc8-Np-klZ" secondAttribute="bottom" id="qxp-rE-9JG"/>
+                <constraint firstAttribute="trailing" secondItem="G4a-Sw-kmV" secondAttribute="trailing" constant="32" id="uNq-iq-Dnx"/>
+                <constraint firstItem="G4a-Sw-kmV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="x1X-Eh-nOk"/>
+                <constraint firstItem="1gs-ej-MZc" firstAttribute="top" secondItem="5Az-5F-Ryr" secondAttribute="bottom" constant="16" id="yzQ-Ct-tCC"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="89"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
