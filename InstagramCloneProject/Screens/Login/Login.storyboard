@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ad7-gO-cS4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ad7-gO-cS4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -143,6 +143,13 @@
                                     <constraint firstItem="237-r2-swy" firstAttribute="centerX" secondItem="vfi-Xm-EkT" secondAttribute="centerX" id="jln-UL-r4G"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4F-0M-bVr" customClass="AuthenticationBottomView" customModule="InstagramCloneProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="48" id="1GA-7E-apK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2zk-Ym-f23"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -163,25 +170,26 @@
                             <constraint firstItem="2zk-Ym-f23" firstAttribute="trailing" secondItem="X8P-6R-DhD" secondAttribute="trailing" constant="16" id="WKj-2w-sLH"/>
                             <constraint firstItem="Qxj-VE-9J9" firstAttribute="top" secondItem="Wdw-mL-deY" secondAttribute="bottom" constant="40" id="cGl-Oi-htR"/>
                             <constraint firstItem="X8P-6R-DhD" firstAttribute="top" secondItem="yec-TM-QYu" secondAttribute="bottom" constant="12" id="f5w-kP-8Jx"/>
+                            <constraint firstItem="2zk-Ym-f23" firstAttribute="bottom" secondItem="d4F-0M-bVr" secondAttribute="bottom" id="fox-Ym-LWQ"/>
                             <constraint firstItem="yec-TM-QYu" firstAttribute="leading" secondItem="2zk-Ym-f23" secondAttribute="leading" constant="16" id="ggk-UN-DFw"/>
                             <constraint firstItem="yec-TM-QYu" firstAttribute="top" secondItem="3lW-4P-8Ra" secondAttribute="bottom" constant="40" id="gis-MQ-SLH"/>
                             <constraint firstItem="X8P-6R-DhD" firstAttribute="leading" secondItem="2zk-Ym-f23" secondAttribute="leading" constant="16" id="gpl-Rm-a3B"/>
+                            <constraint firstItem="d4F-0M-bVr" firstAttribute="leading" secondItem="2zk-Ym-f23" secondAttribute="leading" id="m4T-BY-d2k"/>
                             <constraint firstItem="2zk-Ym-f23" firstAttribute="bottom" secondItem="vfi-Xm-EkT" secondAttribute="bottom" id="sBx-O0-Qga"/>
+                            <constraint firstItem="2zk-Ym-f23" firstAttribute="trailing" secondItem="d4F-0M-bVr" secondAttribute="trailing" id="tEF-pp-6g7"/>
                             <constraint firstItem="cXe-qJ-Tr2" firstAttribute="leading" secondItem="2zk-Ym-f23" secondAttribute="leading" constant="16" id="tgf-hT-IBX"/>
                             <constraint firstItem="Qxj-VE-9J9" firstAttribute="centerX" secondItem="2zk-Ym-f23" secondAttribute="centerX" id="xWP-cQ-RGW"/>
                             <constraint firstItem="3lW-4P-8Ra" firstAttribute="centerX" secondItem="2zk-Ym-f23" secondAttribute="centerX" id="zAN-4Y-2Nh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomDivider" destination="Zbz-Lz-8l8" id="3sD-4k-iQt"/>
-                        <outlet property="bottomInfoLabel" destination="YDq-u2-bed" id="GcP-cg-gwm"/>
+                        <outlet property="bottomInfoView" destination="d4F-0M-bVr" id="4l8-xo-cNh"/>
                         <outlet property="forgetPasswordButton" destination="u5U-2R-Xcq" id="qMw-JX-mG3"/>
                         <outlet property="logInButton" destination="Kx4-t5-NX5" id="X4M-RV-YQN"/>
                         <outlet property="logInWithFacebookButton" destination="pqS-zi-R75" id="jf4-rn-NEe"/>
                         <outlet property="orDividerView" destination="cXe-qJ-Tr2" id="yYE-18-Riy"/>
                         <outlet property="orLabel" destination="Wdw-mL-deY" id="ubR-7s-bcc"/>
                         <outlet property="passwordTextField" destination="X8P-6R-DhD" id="JbO-wV-eIo"/>
-                        <outlet property="signUpButton" destination="V9P-9m-f0n" id="T4O-qd-UXp"/>
                         <outlet property="usernameTextField" destination="yec-TM-QYu" id="ljD-2t-Ycx"/>
                     </connections>
                 </viewController>

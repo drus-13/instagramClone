@@ -12,7 +12,6 @@ struct Mapper {
     
     static func parseJson<T: Decodable>(model: T.Type, content: String) -> T? {
         let decoder = JSONDecoder()
-//        decoder.keyDecodingStrategy = .convertFromSnakeCase
         if let json = try? decoder.decode(model, from: Data(content.utf8)) {
             return json
         }

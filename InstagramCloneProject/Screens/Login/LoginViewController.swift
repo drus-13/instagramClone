@@ -9,7 +9,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
 
-    private var loginViewModel: LoginViewModel = LoginViewModel()
+    private var viewModel: LoginViewModel = LoginViewModel()
     
     @IBOutlet private weak var usernameTextField: IGTextField!
     @IBOutlet private weak var passwordTextField: IGTextField!
@@ -18,15 +18,13 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var orDividerView: UIView!
     @IBOutlet private weak var orLabel: UILabel!
     @IBOutlet private weak var logInWithFacebookButton: UIButton!
-    @IBOutlet private weak var bottomDivider: UIView!
-    @IBOutlet private weak var bottomInfoLabel: UILabel!
-    @IBOutlet private weak var signUpButton: UIButton!
+    @IBOutlet private weak var bottomInfoView: AuthenticationBottomView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loginViewModel.delegate = self
-        self.loginViewModel.load()
+        self.viewModel.delegate = self
+        self.viewModel.load()
         
         self.usernameTextField.setPlaceholder(Localization.string(key: "login.userNamePlaceholder", defaultValues: ""))
         self.passwordTextField.setPlaceholder(Localization.string(key: "login.passwordPlaceholder", defaultValues: ""))
@@ -46,32 +44,34 @@ final class LoginViewController: UIViewController {
         self.orLabel.backgroundColor = Theme.with(color: .viewBackgroundColor)
         self.orDividerView.backgroundColor = Theme.with(color: .borderColor)
         self.logInWithFacebookButton.configure(type: .secondary)
-        self.bottomDivider.backgroundColor = Theme.with(color: .borderColor)
-        self.bottomInfoLabel.textColor = Theme.with(color: .placeholderColor)
-        self.bottomInfoLabel.font = Font.with(size: .small, weight: .regular, family: .display)
-        self.signUpButton.configure(type: .inline)
-        self.signUpButton.titleLabel?.font = Font.with(size: .small, weight: .regular, family: .display)
+        
+        self.bottomInfoView.configure(infoText: Localization.string(key: "login.dontHaveAnAccount", defaultValues: ""), infoButtonText: Localization.string(key: "login.signUp", defaultValues: ""))
+        self.bottomInfoView.delegate = self
     }
     
     @IBAction private func forgetPasswordButtonTapped(_ sender: Any) {
-        self.loginViewModel.forgetPasswordTapped()
+        self.viewModel.forgetPasswordTapped()
     }
     
     @IBAction private func logInButtonTapped(_ sender: Any) {
-        self.loginViewModel.logInTapped()
+        self.viewModel.logInTapped()
     }
     
     @IBAction private func logInFacebookButtonTapped(_ sender: Any) {
-        self.loginViewModel.loginWithFacebookTapped()
-    }
-    
-    
-    @IBAction private func signUpButtonTapped(_ sender: Any) {
-        self.loginViewModel.signUpTapped()
+        self.viewModel.loginWithFacebookTapped()
     }
     
 }
 
 extension LoginViewController: LoginViewModelDelegate {
+    
+}
+
+extension LoginViewController: AuthenticationBottomViewDelegate {
+    func viewButtonTapped() {
+        self.viewModel.signUpTapped()
+
+    }
+    
     
 }
